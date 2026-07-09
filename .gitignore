@@ -1,0 +1,27 @@
+.env
+.env.example
+
+# Python
+__pycache__/
+*.py[cod]
+
+# SQLite / DB
+*.db
+*.sqlite3
+
+# Chroma (embeddings / vector db)
+.chroma/
+./data/email_rag.db
+.venv/
+
+# Node
+node_modules/
+
+# Editor / OS artifacts
+.vscode/
+*.log
+Thumbs.db
+
+docker*
+Dockerfile
+Dockerfile.*

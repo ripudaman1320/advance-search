@@ -1,0 +1,77 @@
+Metadata-Version: 2.4
+Name: email-rag-chatbot
+Version: 0.1.0
+Summary: Enterprise RAG system for personal email history
+Author-email: Your Name <you@example.com>
+Requires-Python: >=3.12
+Requires-Dist: uvicorn[standard]>=0.24.0
+Requires-Dist: fastapi>=0.104.0
+Requires-Dist: pydantic>=2.5.0
+Requires-Dist: pydantic-settings>=2.1.0
+Requires-Dist: python-dotenv>=1.0.0
+Requires-Dist: httpx>=0.25.0
+Requires-Dist: torch>=2.0.0
+Requires-Dist: transformers>=4.30.0
+Requires-Dist: python-docx>=0.8.11
+Requires-Dist: langchain>=0.1.0
+Requires-Dist: langchain-text-splitters>=0.0.1
+Requires-Dist: chromadb>=0.4.0
+Requires-Dist: rank-bm25>=0.2.2
+Requires-Dist: sentence-transformers>=2.2.2
+Requires-Dist: numpy>=1.26.0
+Requires-Dist: langchain-ollama>=0.1.0
+Requires-Dist: groq>=0.9.0
+Requires-Dist: gradio>=4.0.0
+Requires-Dist: sqlalchemy>=2.0.0
+Requires-Dist: ragas>=0.1.0
+Requires-Dist: scikit-learn>=1.4.0
+Requires-Dist: python-json-logger>=2.0.0
+Requires-Dist: pytest>=7.4.0
+Requires-Dist: pytest-asyncio>=0.21.0
+Requires-Dist: pytest-cov>=4.1.0
+Requires-Dist: black>=23.10.0
+Requires-Dist: ruff>=0.11.0
+Requires-Dist: mypy>=1.7.0
+Requires-Dist: ipython>=8.0.0
+Provides-Extra: core
+Requires-Dist: uvicorn[standard]>=0.24.0; extra == "core"
+Requires-Dist: fastapi>=0.104.0; extra == "core"
+Requires-Dist: pydantic>=2.5.0; extra == "core"
+Requires-Dist: pydantic-settings>=2.1.0; extra == "core"
+Requires-Dist: python-dotenv>=1.0.0; extra == "core"
+Requires-Dist: httpx>=0.25.0; extra == "core"
+Provides-Extra: rerank
+Requires-Dist: torch>=2.0.0; extra == "rerank"
+Requires-Dist: transformers>=4.30.0; extra == "rerank"
+Provides-Extra: ingest
+Requires-Dist: python-docx>=0.8.11; extra == "ingest"
+Requires-Dist: langchain>=0.1.0; extra == "ingest"
+Requires-Dist: langchain-text-splitters>=0.0.1; extra == "ingest"
+Provides-Extra: retrieval
+Requires-Dist: chromadb>=0.4.0; extra == "retrieval"
+Requires-Dist: rank-bm25>=0.2.2; extra == "retrieval"
+Requires-Dist: sentence-transformers>=2.2.2; extra == "retrieval"
+Requires-Dist: numpy>=1.26.0; extra == "retrieval"
+Provides-Extra: llm
+Requires-Dist: langchain-ollama>=0.1.0; extra == "llm"
+Requires-Dist: groq>=0.9.0; extra == "llm"
+Provides-Extra: ui
+Requires-Dist: gradio>=4.0.0; extra == "ui"
+Provides-Extra: storage
+Requires-Dist: sqlalchemy>=2.0.0; extra == "storage"
+Provides-Extra: eval
+Requires-Dist: ragas>=0.1.0; extra == "eval"
+Requires-Dist: scikit-learn>=1.4.0; extra == "eval"
+Provides-Extra: observability
+Requires-Dist: python-json-logger>=2.0.0; extra == "observability"
+Provides-Extra: test
+Requires-Dist: pytest>=7.4.0; extra == "test"
+Requires-Dist: pytest-asyncio>=0.21.0; extra == "test"
+Requires-Dist: pytest-cov>=4.1.0; extra == "test"
+Provides-Extra: dev
+Requires-Dist: black>=23.10.0; extra == "dev"
+Requires-Dist: ruff>=0.11.0; extra == "dev"
+Requires-Dist: mypy>=1.7.0; extra == "dev"
+Requires-Dist: ipython>=8.0.0; extra == "dev"
+Provides-Extra: all
+Requires-Dist: email-rag-chatbot[core,dev,eval,ingest,llm,observability,rerank,retrieval,storage,test,ui]; extra == "all"
